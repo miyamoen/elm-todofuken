@@ -1,6 +1,6 @@
 {
     "version": "1.0.0",
-    "summary": "helpful summary of your project, less than 80 characters",
+    "summary": "A searchable ISO 3166-2:JP based list of prefectures and areas."    ,
     "repository": "https://github.com/miyamoen/elm-todofuken.git",
     "license": "BSD3",
     "source-directories": [
