@@ -1,6 +1,6 @@
 # elm-todofuken
 
-A searchable [ISO 3166-2:JP](https://en.wikipedia.org/wiki/ISO_3166-2:JP) based list of prefectures and areas.
+A searchable [ISO 3166-2:JP](https://en.wikipedia.org/wiki/ISO_3166-2:JP) based list of japanese prefectures and areas.
 
 ```elm
 > import Todofuken
