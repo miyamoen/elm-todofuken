@@ -73,6 +73,7 @@ type alias Area =
     toString ShortKana aichi -- アイチ
     toString LongEn aichi -- aichiken
     toString ShortEn aichi -- aichi
+
 -}
 toString : Format -> Prefecture -> String
 toString format { name, unit, kana, en } =
@@ -237,7 +238,7 @@ allPrefectures =
     , ( 17, "石川", Ken, "イシカワ", "ishikawa", chubuArea )
     , ( 18, "福井", Ken, "フクイ", "hukui", chubuArea )
     , ( 19, "山梨", Ken, "ヤマナシ", "yamanashi", chubuArea )
-    , ( 30, "長野", Ken, "ナガノ", "nagano", chubuArea )
+    , ( 20, "長野", Ken, "ナガノ", "nagano", chubuArea )
     , ( 21, "岐阜", Ken, "ギフ", "gifu", chubuArea )
     , ( 22, "静岡", Ken, "シズオカ", "shizuoka", chubuArea )
     , ( 23, "愛知", Ken, "アイチ", "aichi", chubuArea )
