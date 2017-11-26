@@ -2,6 +2,7 @@ module Expression exposing (..)
 
 import Test exposing (Test)
 import Expect exposing (Expectation)
+import Set
 
 
 infixr 0 ==>
@@ -31,3 +32,13 @@ contains item list _ =
             (toString list)
                 ++ " dose not contain "
                 ++ (toString item)
+
+
+hasUniqueProperty : (a -> comparable) -> List a -> () -> Expectation
+hasUniqueProperty toProperty list =
+    List.length list
+        === (list
+                |> List.map toProperty
+                |> Set.fromList
+                |> Set.size
+            )

@@ -1,9 +1,7 @@
 module Consistency exposing (..)
 
-import Expect exposing (Expectation)
 import Expression exposing (..)
 import Sample exposing (..)
-import Set
 import Test exposing (..)
 import Todofuken exposing (..)
 
@@ -30,13 +28,3 @@ consistency =
         , "area.kana is unique" ==> hasUniqueProperty .kana allAreas
         , "area.en is unique" ==> hasUniqueProperty .en allAreas
         ]
-
-
-hasUniqueProperty : (a -> comparable) -> List a -> () -> Expectation
-hasUniqueProperty toProperty list =
-    List.length list
-        === (list
-                |> List.map toProperty
-                |> Set.fromList
-                |> Set.size
-            )
